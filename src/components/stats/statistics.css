@@ -29,6 +29,7 @@
   padding: 20px 0;
   text-align: center;
   color: #fff;
+  flex-direction: column;
 }
 
 .label {

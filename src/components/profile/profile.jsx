@@ -5,24 +5,26 @@ import './profile.css';
 const Profile = ({ avatar, username, tag, location, stats }) => {
   return (
     <div className="profile">
-      <div className={'description'}>
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+      <div className={'profile-description'}>
+        <img src={avatar} alt="User avatar" className="profile-avatar" />
+        <p className="profile-name">
+          <span className="profile-tag">@{tag}</span>
+          {username}
+        </p>
+        <p className="profile-location">{location}</p>
       </div>
-      <ul className="stats">
+      <ul className="profile-stats">
         <li>
-          <p className="label">Followers</p>
-          <p className="quantity">{stats.followers}</p>
+          <p className="profile-label">Followers</p>
+          <p className="profile-quantity">{stats.followers}</p>
         </li>
         <li>
-          <p className="label">Views</p>
-          <p className="quantity">{stats.views}</p>
+          <p className="profile-label">Views</p>
+          <p className="profile-quantity">{stats.views}</p>
         </li>
         <li>
-          <p className="label">Likes</p>
-          <p className="quantity">{stats.likes}</p>
+          <p className="profile-label">Likes</p>
+          <p className="profile-quantity">{stats.likes}</p>
         </li>
       </ul>
     </div>
