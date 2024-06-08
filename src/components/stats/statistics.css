@@ -9,7 +9,7 @@
   font-family: Arial, sans-serif;
 }
 
-.title {
+.stats-title {
   font-size: 22px;
   margin: 0;
   padding: 20px 0;
@@ -24,7 +24,7 @@
   list-style: none;
 }
 
-.item {
+.stats-item {
   flex: 1;
   padding: 20px 0;
   text-align: center;
@@ -32,13 +32,13 @@
   flex-direction: column;
 }
 
-.label {
+.stats-label {
   display: block;
   font-size: 16px;
   margin-bottom: 5px;
 }
 
-.percentage {
+.stats-percentage {
   font-size: 24px;
   font-weight: bold;
 }
